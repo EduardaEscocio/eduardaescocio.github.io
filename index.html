@@ -1,271 +1,389 @@
-  <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Eduarda Escócio</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Eduarda Escócio</title>
 
-    <style>
-      /* --- CONFIGURAÇÕES GERAIS --- */
-      body {
-        margin: 0;
-        font-family: Epilogue, sans-serif;
-        color: #2D2D2D;
-        background: white;
+  <style>
+    /* --- CONFIGURAÇÕES GERAIS --- */
+    body {
+      margin: 0;
+      font-family: Epilogue, sans-serif;
+      color: #2D2D2D;
+      background: white;
+    }
+
+    section {
+      padding: 42px 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: auto;
+    }
+
+    /* --- HEADER --- */
+    header {
+      padding: 24px 42px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 24px;
+    }
+
+    header .nav-item {
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    /* --- HERO --- */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 68px;
+      padding: 50px 24px;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero img {
+      width: 425px;
+      height: 432px;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      max-width: 620px;
+      min-width: 320px;
+    }
+
+    .hero-text h1 {
+      font-family: 'against';
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero-text .subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      font-family: "Atkinson Hyperlegible";
+    }
+
+    .button {
+      background: #2D2D2D;
+      color: white;
+      padding: 24px 64px;
+      font-size: 20px;
+      font-weight: 600;
+      display: inline-flex;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+
+    /* ============================
+          SEÇÃO SOBRE MIM
+    ============================ */
+
+    .sobre-section {
+      padding: 50px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      background: linear-gradient(0deg, rgba(255,255,255,0.20), rgba(255,255,255,0.20)), white;
+    }
+
+    .sobre-header {
+      width: 124px;
+      height: 124px;
+      background: #F14D7C;
+    }
+
+    .sobre-content {
+      max-width: 620px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .sobre-content h1 {
+      font-family: against;
+      font-size: 64px;
+      color: #A24E74;
+      margin: 0;
+    }
+
+    .sobre-divider {
+      width: 100%;
+      height: 1px;
+      background: black;
+    }
+
+    .sobre-text {
+      font-size: 16px;
+      line-height: 1.6;
+      font-family: Inter, sans-serif;
+    }
+
+    .sobre-highlight {
+      color: #FF5F8D;
+      font-weight: 700;
+    }
+
+    .sobre-mim {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-family: against;
+      font-size: 64px;
+      color: #A24E74;
+    }
+
+    .sobre-img {
+      width: 386px;
+      height: 449px;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 900px) {
+      .sobre-mim {
+        position: static;
+        margin-top: -20px;
       }
 
-      section {
-        padding: 42px 24px;
-      }
-
-      .container {
+      .sobre-img {
         width: 100%;
-        max-width: 1280px;
-        margin: auto;
+        height: auto;
       }
+    }
 
-      /* --- HEADER --- */
-      header {
-        padding: 24px 42px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 24px;
-      }
-
-      header .nav-item {
-        font-size: 17px;
-        cursor: pointer;
-      }
-
-      /* --- HERO --- */
-      .hero {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 68px;
-        padding: 50px 24px;
-        align-items: center;
-        position: relative;
-      }
-
-      .hero img {
-        width: 425px;
-        height: 432px;
-        object-fit: cover;
-      }
-
-      .hero-text {
-        max-width: 620px;
-        min-width: 320px;
-      }
-
-      .hero-text h1 {
-        font-family: 'against';
+    @media (max-width: 600px) {
+      .sobre-content h1,
+      .sobre-mim {
         font-size: 48px;
-        margin: 0;
       }
 
-      .hero-text .subtitle {
-        font-size: 20px;
-        line-height: 30px;
-        font-family: "Atkinson Hyperlegible";
+      .sobre-header {
+        width: 90px;
+        height: 90px;
       }
+    }
 
-      .button {
-        background: #2D2D2D;
-        color: white;
-        padding: 24px 64px;
-        font-size: 20px;
-        font-weight: 600;
-        display: inline-flex;
-        cursor: pointer;
-        border-radius: 4px;
-        margin-top: 20px;
-      }
 
-      /* --- CARDS GERAIS --- */
-      .cards {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        flex-direction: row;
-        gap: 24px;
-      }
+    /* --- CARDS GERAIS --- */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: row;
+      gap: 24px;
+    }
 
-      .card {
-        flex: 1 1 320px;
-        padding: 64px 42px;
-        text-align: center;
-      }
+    .card {
+      flex: 1 1 320px;
+      padding: 64px 42px;
+      text-align: center;
+    }
 
-      .card-icon {
-        width: 124px;
-        height: 124px;
-        background: #ccc;
-        margin: 0 auto 42px;
-      }
+    .card-title {
+      font-size: 27px;
+      font-weight: 600;
+    }
 
-      .card-title {
-        font-size: 27px;
-        font-weight: 600;
-      }
+    .card-text {
+      font-size: 17px;
+      line-height: 27px;
+    }
 
-      .card-text {
-        font-size: 17px;
-        line-height: 27px;
-      }
+    /* --- SOCIAL MÍDIA --- */
+    .social-item {
+      flex: 1 1 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
 
-      /* --- SOCIAL MÍDIA --- */
-      .social-item {
-        flex: 1 1 320px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
+    .social-item img {
+      height: 330px;
+      width: 100%;
+      object-fit: cover;
+    }
 
-      .social-item img {
-        height: 330px;
-        width: 100%;
-        object-fit: cover;
-      }
+    .social-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
 
-      .social-title {
-        font-size: 20px;
-        font-weight: 600;
-      }
+    /* --- FOOTER --- */
+    footer {
+      padding: 42px 24px 86px;
+    }
 
-      /* --- FOOTER --- */
-      footer {
-        padding: 42px 24px 86px;
-      }
+    footer h2 {
+      font-size: 32px;
+      font-weight: 600;
+    }
 
-      footer h2 {
-        font-size: 32px;
-        font-weight: 600;
-      }
+    .footer-icons {
+      display: flex;
+      gap: 24px;
+      margin-top: 24px;
+    }
 
-      .footer-icons {
-        display: flex;
-        gap: 24px;
-        margin-top: 24px;
-      }
+    .footer-icons div {
+      width: 36px;
+      height: 36px;
+      background: black;
+    }
+  </style>
+</head>
 
-      .footer-icons div {
-        width: 36px;
-        height: 36px;
-        background: black;
-      }
-    </style>
-  </head>
+<body>
 
-  <body>
+  <div class="container">
 
-    <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="nav-item">About</div>
+      <div class="nav-item">Work</div>
+      <div class="nav-item">Contact</div>
+    </header>
 
-      <!-- HEADER -->
-      <header>
-        <div class="nav-item">About</div>
-        <div class="nav-item">Work</div>
-        <div class="nav-item">Contact</div>
-      </header>
 
-      <!-- HERO -->
-      <section class="hero">
-        <img src="img/g405696.png" alt="foto">
+    <!-- ===============================
+            SEÇÃO SOBRE MIM (INSERIDA AQUI)
+    ================================= -->
+    <section class="sobre-section">
 
-        <div class="hero-text">
-          <div class="subtitle">
-            UI/UX Designer | Software Engineering | Agile Methodologies
+      <div class="sobre-header"></div>
+
+      <div class="sobre-content">
+        <h1>Sobre</h1>
+        <div class="sobre-divider"></div>
+
+        <div class="sobre-text">
+          Oi! Eu sou a Eduarda (<span class="sobre-highlight">Madu</span>), e a minha paixão é resolver problemas.<br><br>
+          Tenho 20 anos, e se você pode imaginar uma atividade criativa, eu provavelmente já fiz. Dentre "um milhão de hobbies", o 
+          <span class="sobre-highlight">Design Centrado no Usuário (UCD)</span> virou meu foco principal e, felizmente, meu trabalho.<br><br>
+          Para unir a curiosidade humana com a execução técnica, estou me formando em 
+          <span class="sobre-highlight">Engenharia de Software pela Universidade Federal do Ceará (UFC).</span><br><br>
+
+          UX • IHC • Psicologia do Usuário • Design de Produto • Marketing Digital<br><br>
+
+          O que realmente me move é entender como e por que os humanos pensam — e transformar isso em soluções que facilitem a vida das pessoas.
+        </div>
+
+        <div class="sobre-mim">mim</div>
+      </div>
+
+      <img class="sobre-img" src="img/eueu.png" alt="foto">
+    </section>
+
+
+
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="img/g405696.png" alt="foto">
+
+      <div class="hero-text">
+        <div class="subtitle">
+          UI/UX Designer | Software Engineering | Agile Methodologies
+        </div>
+
+        <h1>Eduarda Escócio</h1>
+
+        <p>
+          Estudante de Engenharia de Software da Universidade Federal do Ceará.
+          Líder de Comunicação e Mídias do Projeto ARES. <br>
+          UI/UX Designer - Oráculos <br>
+          Psicologia do Usuário | Padrões de Design | Interação Humano-Computador.
+        </p>
+
+        <div class="button">Contate-me</div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section>
+      <div class="cards">
+
+        <div class="card">
+          <img src="img/rectangle25.png">
+          <div class="card-title">Metodologias Ágeis</div>
+          <div class="card-text">
+            Experiência com ferramentas como ClickUp, Jira, Trello...
           </div>
+        </div>
 
-          <h1>Eduarda Escócio</h1>
+        <div class="card">
+          <img src="img/skillscardicon.png">
+          <div class="card-title">User Experience</div>
+          <div class="card-text">
+            Além da estética: aplico psicologia do consumidor para criar interfaces intuitivas.
+          </div>
+        </div>
 
-          <p>
-            Estudante de Engenharia de Software da Universidade Federal do Ceará.
-            Líder de Comunicação e Mídias do Projeto ARES. <br>
-            UI/UX Designer - Oráculos <br>
-            Psicologia do Usuário | Padrões de Design | Interação Humano-Computador.
+        <div class="card">
+          <img src="img/skillscardicon2.png">
+          <div class="card-title">Criatividade</div>
+          <div class="card-text">
+            Construo projetos variados para desenvolver senso crítico e inovação.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section>
+      <h2 style="text-align:center">Social mídia</h2>
+
+      <div class="cards">
+
+        <div class="social-item">
+          <img src="https://placehold.co/395x330">
+          <div class="social-title">PROJETO ARES</div>
+          <p>Análise de Riscos e Estratégias em Segurança <br>
+            <span style="color:#0063AF">Instagram do projeto</span>
           </p>
-
-          <div class="button">Contate-me</div>
         </div>
-      </section>
 
-      <!-- CARDS -->
-      <section>
-        <div class="cards">
-
-          <div class="card">
-            <img src="img/rectangle25.png">
-            <div class="card-title">Metodologias Ágeis</div>
-            <div class="card-text">
-              Experiência com ferramentas como ClickUp, Jira, Trello...
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/skillscardicon.png">
-            <div class="card-title">User Experience</div>
-            <div class="card-text">
-              Além da estética: aplico psicologia do consumidor para criar interfaces intuitivas.
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/skillscardicon2.png">
-            <div class="card-title">Criatividade</div>
-            <div class="card-text">
-              Construo projetos variados para desenvolver senso crítico e inovação.
-            </div>
-          </div>
-
+        <div class="social-item">
+          <img src="https://placehold.co/395x330">
+          <div class="social-title">Projeto Meu Amigo Perro</div>
+          <p>Projeto social para cuidar dos cachorros da UFC. <br>
+            <span style="color:#FF00FB">Instagram do projeto</span>
+          </p>
         </div>
-      </section>
 
-      <!-- SOCIAL MEDIA -->
-      <section>
-        <h2 style="text-align:center">Social mídia</h2>
-
-        <div class="cards">
-
-          <div class="social-item">
-            <img src="https://placehold.co/395x330">
-            <div class="social-title">PROJETO ARES</div>
-            <p>Análise de Riscos e Estratégias em Segurança <br>
-              <span style="color:#0063AF">Instagram do projeto</span>
-            </p>
-          </div>
-
-          <div class="social-item">
-            <img src="https://placehold.co/395x330">
-            <div class="social-title">Projeto Meu Amigo Perro</div>
-            <p>Projeto social para cuidar dos cachorros da UFC. <br>
-              <span style="color:#FF00FB">Instagram do projeto</span>
-            </p>
-          </div>
-
-          <div class="social-item">
-            <img src="https://placehold.co/395x330">
-            <div class="social-title">Centro Acadêmico Margaret Hamilton</div>
-            <p>Centro Acadêmico de Engenharia de Software. <br>
-              <span style="color:#001890">Instagram do Centro Acadêmico</span>
-            </p>
-          </div>
-
+        <div class="social-item">
+          <img src="https://placehold.co/395x330">
+          <div class="social-title">Centro Acadêmico Margaret Hamilton</div>
+          <p>Centro Acadêmico de Engenharia de Software. <br>
+            <span style="color:#001890">Instagram do Centro Acadêmico</span>
+          </p>
         </div>
-      </section>
 
-      <!-- FOOTER -->
-      <footer>
-        <h2>Vamos criar algo inovador juntos?</h2>
+      </div>
+    </section>
 
-        <div class="footer-icons">
-          <div><img src="img/discord.png"> </div>
-          <div><img src="img/behance.png"></div>
-          <div><img src="img/nstagram.png"></div>
-        </div>
-      </footer>
+    <!-- FOOTER -->
+    <footer>
+      <h2>Vamos criar algo inovador juntos?</h2>
 
-    </div>
+      <div class="footer-icons">
+        <div><img src="img/discord.png"> </div>
+        <div><img src="img/behance.png"></div>
+        <div><img src="img/nstagram.png"></div>
+      </div>
+    </footer>
 
-  </body>
-  </html>
+  </div>
+
+</body>
+</html>
