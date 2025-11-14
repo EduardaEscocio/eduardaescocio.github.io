@@ -1,0 +1,138 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+body {
+  margin: 0;
+  font-family: Epilogue, sans-serif;
+  color: #2D2D2D;
+  background: white;
+}
+
+section {
+  padding: 42px 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* --- HEADER --- */
+header {
+  padding: 24px 42px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+header .nav-item {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* --- HERO --- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 68px;
+  padding: 50px 24px;
+  align-items: center;
+  position: relative;
+}
+
+.hero img {
+  width: 425px;
+  height: 432px;
+}
+
+.hero-text h1 {
+  font-family: 'against';
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text .subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Atkinson Hyperlegible";
+}
+
+.button {
+  background: #2D2D2D;
+  color: white;
+  padding: 24px 64px;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-flex;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* --- CARDS GERAIS --- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex: 1 1 320px;
+  padding: 64px 42px;
+  text-align: center;
+}
+
+.card-icon {
+  width: 124px;
+  height: 124px;
+  background: #ccc;
+  margin-bottom: 42px;
+}
+
+.card-title {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+/* --- SOCIAL MÍDIA --- */
+.social-item {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.social-item img {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.social-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* --- FOOTER --- */
+footer {
+  padding: 42px 24px 86px;
+}
+
+footer h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-icons div {
+  width: 36px;
+  height: 36px;
+  background: black;
+}
