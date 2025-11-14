@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Eduarda Escócio</title>
 
   <style>
+    /* --- CONFIGURAÇÕES GERAIS --- */
     body {
       margin: 0;
       font-family: Epilogue, sans-serif;
@@ -23,12 +25,19 @@
       margin: auto;
     }
 
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
     /* --- HEADER --- */
     header {
       padding: 24px 42px;
       display: flex;
       justify-content: flex-end;
       gap: 24px;
+      flex-wrap: wrap;
     }
 
     header .nav-item {
@@ -40,25 +49,26 @@
     .hero {
       display: flex;
       flex-wrap: wrap;
-      gap: 68px;
+      gap: 40px;
       padding: 50px 24px;
       align-items: center;
-      position: relative;
+      justify-content: center;
     }
 
     .hero img {
-      width: 425px;
-      height: 432px;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 8px;
       object-fit: cover;
     }
 
     .hero-text {
       max-width: 620px;
-      min-width: 320px;
+      min-width: 280px;
     }
 
     .hero-text h1 {
-      font-family: 'against';
+      font-family: 'against', sans-serif;
       font-size: 48px;
       margin: 0;
     }
@@ -66,14 +76,15 @@
     .hero-text .subtitle {
       font-size: 20px;
       line-height: 30px;
-      font-family: "Atkinson Hyperlegible";
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      margin-bottom: 12px;
     }
 
     .button {
       background: #2D2D2D;
       color: white;
-      padding: 24px 64px;
-      font-size: 20px;
+      padding: 18px 48px;
+      font-size: 18px;
       font-weight: 600;
       display: inline-flex;
       cursor: pointer;
@@ -86,43 +97,41 @@
       display: flex;
       flex-wrap: wrap;
       gap: 24px;
+      justify-content: center;
     }
 
     .card {
-      flex: 1 1 320px;
-      padding: 64px 42px;
+      flex: 1 1 300px;
+      max-width: 370px;
+      padding: 42px 32px;
       text-align: center;
-    }
-
-    .card-icon {
-      width: 124px;
-      height: 124px;
-      background: #ccc;
-      margin: 0 auto 42px;
+      border-radius: 8px;
     }
 
     .card-title {
-      font-size: 27px;
+      font-size: 24px;
       font-weight: 600;
+      margin-top: 12px;
     }
 
     .card-text {
       font-size: 17px;
       line-height: 27px;
+      margin-top: 8px;
     }
 
     /* --- SOCIAL MÍDIA --- */
     .social-item {
-      flex: 1 1 320px;
+      flex: 1 1 300px;
+      max-width: 395px;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 18px;
     }
 
     .social-item img {
-      height: 330px;
       width: 100%;
-      object-fit: cover;
+      border-radius: 8px;
     }
 
     .social-title {
@@ -133,10 +142,11 @@
     /* --- FOOTER --- */
     footer {
       padding: 42px 24px 86px;
+      text-align: center;
     }
 
     footer h2 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 600;
     }
 
@@ -144,12 +154,58 @@
       display: flex;
       gap: 24px;
       margin-top: 24px;
+      justify-content: center;
     }
 
     .footer-icons div {
       width: 36px;
       height: 36px;
       background: black;
+      border-radius: 4px;
+    }
+
+    /* --------- RESPONSIVIDADE --------- */
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 38px;
+      }
+
+      .hero-text .subtitle {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 32px 20px;
+      }
+
+      .button {
+        padding: 16px 36px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero-text h1 {
+        font-size: 32px;
+      }
+
+      .hero {
+        padding: 32px 16px;
+      }
+
+      .card {
+        padding: 32px 20px;
+      }
+
+      footer h2 {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
@@ -159,39 +215,39 @@
   <div class="container">
 
     <!-- HEADER -->
-<header>
+    <header>
       <div class="nav-item">About</div>
       <div class="nav-item">Work</div>
       <div class="nav-item">Contact</div>
     </header>
 
     <!-- HERO -->
-  <section class="hero">
+    <section class="hero">
       <img src="img/g405696.png" alt="foto">
 
-  <div class="hero-text">
+      <div class="hero-text">
         <div class="subtitle">
           UI/UX Designer | Software Engineering | Agile Methodologies
         </div>
 
-  <h1>Eduarda Escócio</h1>
+        <h1>Eduarda Escócio</h1>
 
-  <p>
+        <p>
           Estudante de Engenharia de Software da Universidade Federal do Ceará.
           Líder de Comunicação e Mídias do Projeto ARES. <br>
           UI/UX Designer - Oráculos <br>
           Psicologia do Usuário | Padrões de Design | Interação Humano-Computador.
         </p>
 
-  <div class="button">Contate-me</div>
+        <div class="button">Contate-me</div>
       </div>
     </section>
 
     <!-- CARDS -->
-<section>
+    <section>
       <div class="cards">
 
-  <div class="card">
+        <div class="card">
           <img src="img/Rectangle 25.png">
           <div class="card-title">Metodologias Ágeis</div>
           <div class="card-text">
@@ -199,7 +255,7 @@
           </div>
         </div>
 
-  <div class="card">
+        <div class="card">
           <img src="img/Skills Card Icon.png">
           <div class="card-title">User Experience</div>
           <div class="card-text">
@@ -207,7 +263,7 @@
           </div>
         </div>
 
-  <div class="card">
+        <div class="card">
           <img src="img/Skills Card Icon2.png">
           <div class="card-title">Criatividade</div>
           <div class="card-text">
@@ -215,15 +271,16 @@
           </div>
         </div>
 
-  </div>
+      </div>
     </section>
-<!-- SOCIAL MEDIA -->
+
+    <!-- SOCIAL MEDIA -->
     <section>
       <h2 style="text-align:center">Social mídia</h2>
 
-  <div class="cards">
+      <div class="cards">
 
-  <div class="social-item">
+        <div class="social-item">
           <img src="https://placehold.co/395x330">
           <div class="social-title">PROJETO ARES</div>
           <p>Análise de Riscos e Estratégias em Segurança <br>
@@ -231,7 +288,7 @@
           </p>
         </div>
 
-  <div class="social-item">
+        <div class="social-item">
           <img src="https://placehold.co/395x330">
           <div class="social-title">Projeto Meu Amigo Perro</div>
           <p>Projeto social para cuidar dos cachorros da UFC. <br>
@@ -239,7 +296,7 @@
           </p>
         </div>
 
-  <div class="social-item">
+        <div class="social-item">
           <img src="https://placehold.co/395x330">
           <div class="social-title">Centro Acadêmico Margaret Hamilton</div>
           <p>Centro Acadêmico de Engenharia de Software. <br>
@@ -247,14 +304,14 @@
           </p>
         </div>
 
-   </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
-<footer>
+    <footer>
       <h2>Vamos criar algo inovador juntos?</h2>
 
-  <div class="footer-icons">
+      <div class="footer-icons">
         <div></div>
         <div></div>
         <div></div>
