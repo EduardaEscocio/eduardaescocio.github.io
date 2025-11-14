@@ -201,7 +201,7 @@
           </div>
         </div>
 
-        <div class="card">
+  <div class="card">
           <img src="img/Skills Card Icon.png">
           <div class="card-title">User Experience</div>
           <div class="card-text">
@@ -209,7 +209,7 @@
           </div>
         </div>
 
-        <div class="card">
+  <div class="card">
           <img src="img/Skills Card Icon2.png">
           <div class="card-title">Criatividade</div>
           <div class="card-text">
@@ -217,16 +217,15 @@
           </div>
         </div>
 
-      </div>
+  </div>
     </section>
-
-    <!-- SOCIAL MEDIA -->
+<!-- SOCIAL MEDIA -->
     <section>
       <h2 style="text-align:center">Social mídia</h2>
 
-      <div class="cards">
+  <div class="cards">
 
-        <div class="social-item">
+  <div class="social-item">
           <img src="https://placehold.co/395x330">
           <div class="social-title">PROJETO ARES</div>
           <p>Análise de Riscos e Estratégias em Segurança <br>
@@ -234,7 +233,7 @@
           </p>
         </div>
 
-        <div class="social-item">
+  <div class="social-item">
           <img src="https://placehold.co/395x330">
           <div class="social-title">Projeto Meu Amigo Perro</div>
           <p>Projeto social para cuidar dos cachorros da UFC. <br>
@@ -242,7 +241,7 @@
           </p>
         </div>
 
-        <div class="social-item">
+  <div class="social-item">
           <img src="https://placehold.co/395x330">
           <div class="social-title">Centro Acadêmico Margaret Hamilton</div>
           <p>Centro Acadêmico de Engenharia de Software. <br>
@@ -250,14 +249,14 @@
           </p>
         </div>
 
-      </div>
+   </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
+<footer>
       <h2>Vamos criar algo inovador juntos?</h2>
 
-      <div class="footer-icons">
+  <div class="footer-icons">
         <div></div>
         <div></div>
         <div></div>
