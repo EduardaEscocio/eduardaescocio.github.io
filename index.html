@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio - Eduarda Escócio</title>
 
+  
   <style>
     /* ANIMAÇÕES */
       .title {
@@ -429,17 +430,182 @@
     <!-- ===============================
             SEÇÃO SOBRE MIM (INSERIDA AQUI)
     ================================= -->
-  <div style="width: 100%; height: 100%; padding-top: 100px; background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), white; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 70px; display: inline-flex">
-    <div style="width: 565px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-        <div style="align-self: stretch; color: #A24E74; font-size: 64px; font-family: against; font-weight: 400; word-wrap: break-word">Sobre mim</div>
-        <div style="width: 565.11px; height: 0px; outline: 1px black solid; outline-offset: -0.50px"></div>
-        <div style="align-self: stretch"><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Oi! Eu sou a Eduarda (</span><span style="color: #FF5F8D; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Madu</span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">), e a minha paixão é resolver problemas.<br/></span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word"><br/>Tenho 20 anos, e se você pode imaginar uma atividade criativa, eu provavelmente já fiz. Dentre "um milhão de hobbies", o</span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word"> </span><span style="color: #FF5F8D; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Design Centrado no Usuário (UCD)</span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word"> virou meu foco principal e, felizmente, meu trabalho.<br/><br/>Afinal, se é para trabalhar, que seja com algo que a gente ama, certo?<br/>Para unir a curiosidade humana com a execução técnica, estou me formando em </span><span style="color: #FF5F8D; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Engenharia de Software pela Universidade Federal do Ceará (UFC)</span><span style="color: #FF5F8D; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">.</span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Meu background é intencionalmente multidisciplinar, e meus estudos se concentram em:<br/><br/></span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">Experiência do Usuário (UX)<br/>Interação Humano-Computador (IHC)<br/>Psicologia do Usuário<br/>Design de Produto<br/>Marketing Digital<br/></span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word"><br/>O que realmente me move é entender como e por que os humanos pensam. Uso essa curiosidade e todos esses estudos para construir soluções que não apenas funcionam, mas que fazem sentido e tornam a vida de quem usa mais fácil.<br/><br/>Apesar de eu sempre dizer que não gosto dos clichês do design, você vai me pegar no final desta página com a frase: “Vamos criar algo juntos?” Às vezes, a gente precisa se permitir, e é exatamente isso que você tem que fazer com o seu cliente, permitir que ele viva a melhor experiência com o seu produto.</span></div>
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Eduarda</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* ==========================
+       SOBRE MIM
+    ========================== */
+
+    .sobre {
+      padding: 120px 24px;
+    }
+
+    .sobre-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 80px;
+    }
+
+    .sobre-texto {
+      max-width: 600px;
+    }
+
+    .sobre-texto h2 {
+      font-size: 64px;
+      font-weight: 700;
+    }
+
+    .sobre-linha {
+      width: 100%;
+      height: 1px;
+      background: #000;
+      margin: 20px 0 30px;
+    }
+
+    .sobre-texto p {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      color: #FF5F8D;
+      font-weight: 700;
+    }
+
+    /* IMAGEM */
+
+    .sobre-imagem {
+      position: relative;
+      width: 420px;
+      height: 480px;
+    }
+
+    .sobre-imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 220px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .blob {
+      position: absolute;
+      width: 100%;
+      height: 85%;
+      background: #FF5E88;
+      border-radius: 220px;
+      top: 30px;
+      left: -25px;
+      z-index: 1;
+    }
+
+    /* ==========================
+       ANIMAÇÕES
+    ========================== */
+
+    .animate {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .animate-delay {
+      opacity: 0;
+      transform: scale(0.9);
+      animation: fadeScale 1.2s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* ==========================
+       RESPONSIVO
+    ========================== */
+
+    @media (max-width: 900px) {
+      .sobre-container {
+        flex-direction: column;
+      }
+
+      .sobre-texto h2 {
+        font-size: 48px;
+      }
+
+      .sobre-imagem {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="sobre">
+    <div class="sobre-container">
+
+      <div class="sobre-texto animate">
+        <h2>Sobre mim</h2>
+        <div class="sobre-linha"></div>
+
+        <p>
+          <strong>Oi! Eu sou a Eduarda (<span class="highlight">Madu</span>), e a minha paixão é resolver problemas.</strong><br><br>
+
+          Tenho 20 anos, e se você pode imaginar uma atividade criativa, eu provavelmente já fiz. 
+          Dentre "um milhão de hobbies", o <span class="highlight">Design Centrado no Usuário (UCD)</span> virou meu foco principal e, felizmente, meu trabalho.<br><br>
+
+          Estou me formando em <span class="highlight">Engenharia de Software pela Universidade Federal do Ceará (UFC)</span>. 
+          Meu background é multidisciplinar e meus estudos se concentram em UX, IHC, Psicologia do Usuário, Design de Produto e Marketing Digital.<br><br>
+
+          O que realmente me move é entender como e por que os humanos pensam, transformando isso em soluções que fazem sentido e facilitam a vida.
+        </p>
+      </div>
+
+      <div class="sobre-imagem animate-delay">
+        <div class="blob"></div>
+        <img src="img/eueu.png" alt="Eduarda">
+      </div>
+
     </div>
-    <div style="width: 544px; height: 549px; position: relative">
-        <div style="width: 552.48px; height: 415.67px; left: -40.32px; top: 83.67px; position: absolute; background: #FF5E88; border-radius: 210.63px"></div>
-        <img style="width: 531.38px; height: 423.91px; left: 0px; top: 83.67px; position: absolute; border-radius: 211.95px" src="/img/eueu.png" />
-    </div>
-</div>
+  </section>
+
+</body>
+</html>
     <!-- CARDS -->
     <section>
       <div class="cards">
@@ -478,7 +644,7 @@
       <div class="cards">
 
         <div class="social-item">
-          <img src="https://placehold.co/395x330">
+          <img src="img/telainicial.png">
           <div class="social-title">SESCOMP</div>
           <p>Análise de Riscos e Estratégias em Segurança <br>
             <span style="color:#0063AF">Instagram do projeto</span>
